@@ -1,0 +1,22 @@
+@use '../base/variables' as var;
+@use '../base/mixins' as mix;
+
+.sobre-festival {
+	padding: 5rem 0;
+	@include mix.ipad {
+		@include mix.grid(2, 3rem);
+	}
+}
+
+.contenido-festival {
+	display: flex;
+	flex-direction: column;
+	// justify-content: center;
+	h2 {
+		margin: 2rem;
+	}
+	.fecha {
+		color: var.$rosa;
+		font-weight: 700;
+	}
+}
